@@ -1,11 +1,10 @@
-import React from "react"
+import React from 'react'
+import Layout from '../components/layout.js'
 
-const blog = () => {
-  return (
-    <div>
-      <h1>This is the BLOG page.</h1>
-    </div>
-  )
-}
+const blog = () => (
+  <Layout>
+    <h1>BLOG</h1>
+  </Layout>
+)
 
 export default blog

@@ -1,8 +1,12 @@
-import React from "react"
+import React from 'react'
+import Button from '../components/button'
+import Layout from '../components/layout'
 
-export default () => (
-  <div>
-    <h1>Hello World</h1>
-    <p>testing emmet interaction for JSX</p>
-  </div>
+const app = () => (
+  <Layout>
+    <h1>HOME</h1>
+    <Button>My Button!</Button>
+  </Layout>
 )
+
+export default app

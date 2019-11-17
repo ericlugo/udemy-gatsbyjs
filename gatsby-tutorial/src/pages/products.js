@@ -1,11 +1,10 @@
-import React from "react"
+import React from 'react'
+import Layout from '../components/layout.js'
 
-function products() {
-  return (
-    <div>
-      <h1>This is the PRODUCTS page.</h1>
-    </div>
-  )
-}
+const products = () => (
+  <Layout>
+    <h1>PRODUCTS</h1>
+  </Layout>
+)
 
 export default products
