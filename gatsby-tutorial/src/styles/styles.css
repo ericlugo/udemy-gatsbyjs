@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+  text-transform: uppercase;
+}
