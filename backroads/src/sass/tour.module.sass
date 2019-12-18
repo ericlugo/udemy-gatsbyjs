@@ -1,0 +1,76 @@
+@import 'variables'
+
+
+
+.tour
+  box-shadow: $lightShadow
+  transition: $mainTransition
+
+  &:hover
+    box-shadow: $darkShadow
+
+.img
+  transition: $mainTransition
+
+.link
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  opacity: 0
+  text-transform: uppercase
+  letter-spacing: $mainSpacing
+  color: $mainWhite
+  border: 2px solid $mainWhite
+  padding: 0.5rem 0.7rem
+  display: inline-block
+  transition: $mainTransition
+  cursor: pointer
+
+  &:hover
+    background: $mainWhite
+    color: $primaryColor
+
+.img-container
+  position: relative
+  background: $primaryColor
+  transition: $mainTransition
+
+  &:hover .img
+    opacity: 0.3
+
+  &:hover .link
+  opacity: 1
+
+.footer
+  padding: 1rem
+  text-align: left
+
+  h3
+    text-transform: capitalize
+    margin-bottom: 0
+
+.info
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  text-transform: uppercase
+  align-items: center
+  margin-top: 0.5rem
+
+  h6, h4
+    margin-bottom: 0
+
+.country
+  text-transform: capitalize
+  color: $primaryColor
+  display: flex
+  align-items: center
+
+.icon
+  margin-right: 0.4rem
+
+.details
+  color: $darkGrey
+  text-transform: uppercase
+  text-align: right

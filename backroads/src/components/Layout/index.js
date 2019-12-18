@@ -9,10 +9,10 @@ import Footer from "./Footer"
 
 export default ({ children }) => {
   return (
-    <React.Fragment>
+    <main>
       <Header />
       {children}
       <Footer />
-    </React.Fragment>
+    </main>
   )
 }
