@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import Banner from "../components/Banner"
+import About from "../components/Home/About"
+import Services from "../components/Home/Services"
 
 import "../sass/index.sass"
 
@@ -19,5 +21,7 @@ export default () => (
         </Link>
       </Banner>
     </SimpleHero>
+    <About />
+    <Services />
   </Layout>
 )
