@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaAlignRight as Menu } from "react-icons/fa"
 
 import links from "../../constants/navLinks.js"
@@ -23,11 +23,15 @@ export default () => {
             <Menu className={styles.logoIcon} />
           </button>
         </div>
-        <ul className={isOpen ? `${styles.navLinks} ${styles.showNav}` : `${styles.navLinks}`}>
-          {links.map((item, index) => <li key={index}><Link to={item.path}>{item.text}</Link></li>)}
+        <ul className={ isOpen ? `${styles.navLinks} ${styles.showNav}` : `${styles.navLinks}` }>
+          {links.map((item, index) => (
+            <li key={index}><AniLink fade to={item.path}>{item.text}</AniLink></li>
+          ))}
         </ul>
         <div className={styles.navSocialLinks}>
-          {socialLinks.map((item, index) => <a key={index} href={item.url} target='_blank' rel="noopener noreferrer">{item.icon}</a>)}
+          {socialLinks.map((item, index) => (
+            <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">{item.icon}</a>
+          ))}
         </div>
       </div>
     </nav>
