@@ -9,8 +9,16 @@
   &:hover
     box-shadow: $darkShadow
 
+.img-container
+  position: relative
+  background: $primaryColor
+  transition: $mainTransition
+
 .img
   transition: $mainTransition
+
+.image-container:hover .img
+    opacity: 0.3
 
 .link
   position: absolute
@@ -22,7 +30,7 @@
   letter-spacing: $mainSpacing
   color: $mainWhite
   border: 2px solid $mainWhite
-  padding: 0.5rem 0.7rem
+  padding: 0.9rem 1.6rem
   display: inline-block
   transition: $mainTransition
   cursor: pointer
@@ -31,16 +39,8 @@
     background: $mainWhite
     color: $primaryColor
 
-.img-container
-  position: relative
-  background: $primaryColor
-  transition: $mainTransition
-
-  &:hover .img
-    opacity: 0.3
-
-  &:hover .link
-  opacity: 1
+.image-container:hover .link
+    opacity: 1
 
 .footer
   padding: 1rem
