@@ -14,11 +14,14 @@
   background: $primaryColor
   transition: $mainTransition
 
+  &:hover > .img
+    opacity: 0.3
+  
+  &:hover > .link
+    opacity: 1
+
 .img
   transition: $mainTransition
-
-.image-container:hover .img
-    opacity: 0.3
 
 .link
   position: absolute
@@ -38,9 +41,6 @@
   &:hover
     background: $mainWhite
     color: $primaryColor
-
-.image-container:hover .link
-    opacity: 1
 
 .footer
   padding: 1rem

@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import BlogList from "../components/Blog/BlogList"
 
 export const query = graphql`
   query {
@@ -19,6 +20,6 @@ export const query = graphql`
 export default ({ data }) => (
   <Layout>
     <StyledHero image={data.defaultBcg.childImageSharp.fluid} />
-    <h1>Blog Page</h1>
+    <BlogList />
   </Layout>
 )
