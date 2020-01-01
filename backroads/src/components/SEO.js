@@ -9,7 +9,7 @@ const getMetadata = graphql`
         siteTitle: title
         siteDesc: description
         author
-        siteURL
+        siteUrl
         image
         twitter: twitterUsername
       }
@@ -22,7 +22,7 @@ const SEO = ({ title, description }) => {
   const {
     siteTitle,
     siteDesc,
-    siteURL,
+    siteUrl,
     image,
     twitter,
     // author,
@@ -34,11 +34,11 @@ const SEO = ({ title, description }) => {
       <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
       {/* facebook card */}
-      <meta property="og:url" content={siteURL} />
+      <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={description || siteDesc} />
-      <meta property="og:image" content={`${siteURL}${image}`} />
+      <meta property="og:image" content={`${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
       {/* twitter card */}
@@ -46,7 +46,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:creator" content={twitter} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description || siteDesc} />
-      <meta name="twitter:image" content={`${siteURL}${image}`} />
+      <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
   )
 }

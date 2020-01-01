@@ -10,7 +10,7 @@ module.exports = {
     author: "@johndoe",
     twitterUsername: "@ericthelugo",
     image: "/defaultBcg.jpeg",
-    siteURL: "https://ericlugo-gatsby-backroads.netlify.com",
+    siteUrl: "https://ericlugo-gatsby-backroads.netlify.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -19,6 +19,15 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://ericlugo-gatsby-backroads.netlify.com",
+        sitemap: "https://ericlugo-gatsby-backroads.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
