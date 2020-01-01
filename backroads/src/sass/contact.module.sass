@@ -1,0 +1,42 @@
+@import 'variables'
+
+
+
+.contact
+  padding: 4rem 0
+
+.center
+  width: 80vw
+  margin: 0 auto
+
+@media screen and (min-width: $breakpoint-md)
+  .center
+    width: 50vw
+    margin: 0 auto
+  
+
+label
+  text-transform: capitalize
+  display: block
+  margin-bottom: 0.5rem
+
+.formControl, .submit
+  width: 100%
+  font-size: 1rem
+  margin-bottom: 1rem
+  padding: 0.375rem 0.75rem
+  border: 1px solid $darkGrey
+  border-radius: 0.25rem
+
+.submit
+  background-color: $primaryColor
+  border-color: $primaryColor
+  text-transform: uppercase
+  color: $mainBlack
+  transition: $mainTransition
+  cursor: pointer
+
+  &:hover
+    background: $darkGrey
+    color: $mainWhite
+    border-color: $darkGrey

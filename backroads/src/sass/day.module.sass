@@ -1,0 +1,31 @@
+@import 'variables'
+
+
+
+.day
+  margin: 2rem 0
+
+  h4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  p
+    line-height: 2
+    transition: $mainTransition
+
+.btn
+  background: transparent
+  border: none
+  cursor: pointer
+  outline: none
+
+  svg
+    font-size: 1.5rem
+    color: $primaryColor
+
+
+
+@media screen and (min-width: $breakpoint-md)
+  .day h4
+    width: 400px
