@@ -3,6 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero.js"
 
@@ -35,6 +36,7 @@ const blogTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <StyledHero image={image} />
       <section className={styles.blog}>
         <div className={styles.center}>

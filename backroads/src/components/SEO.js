@@ -25,7 +25,7 @@ const SEO = ({ title, description }) => {
     siteURL,
     image,
     twitter,
-    author,
+    // author,
   } = site.siteMetadata
   const fullTitle = `${title} | ${siteTitle}`.toUpperCase()
 

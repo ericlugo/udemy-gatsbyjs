@@ -4,6 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 import { FaMoneyBillWave, FaMap } from "react-icons/fa"
 
+import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Day from "../components/SingleTour/Day"
@@ -25,6 +26,7 @@ const tourTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <StyledHero image={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
