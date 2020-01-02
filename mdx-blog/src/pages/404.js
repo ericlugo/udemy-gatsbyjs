@@ -2,13 +2,12 @@ import React from "react"
 
 import Layout from "../components/Layout"
 
-const Home = () => {
+const Error = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
-      <p>content goes here...</p>
+      <h1>404 not found</h1>
     </Layout>
   )
 }
 
-export default Home
+export default Error
