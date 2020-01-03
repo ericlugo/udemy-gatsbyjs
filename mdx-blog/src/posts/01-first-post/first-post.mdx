@@ -1,0 +1,64 @@
+---
+title: first post
+slug: first-post
+image: ./images/image01.jpg
+date: 2019-06-01
+author: john smith
+---
+
+import Layout from '../../components/Layout'
+export default Layout
+
+<!--
+  This is the standard way to import a Layout in MDX.
+  Note that you don't have to import. You can also build the Layout in the default export instead.
+  You can then place your markdown below the export and it will be processed properly.
+
+  Sometimes you don’t want to include the layout in every file, so gatsby-plugin-mdx offers the option to set default layouts in the gatsby-config.js plugin config.
+  Set the key to the name set in the gatsby-source-filesystem config.
+  If no matching default layout is found, the default default layout is used.
+
+  You can also set options.defaultLayouts.default if you only want to use one layout for all MDX pages that don’t already have a layout defined.
+  For more info see: https://www.gatsbyjs.org/docs/mdx/
+-->
+
+import Counter from "../../components/Counter"
+
+# First Post
+
+###### This is a subtitle
+
+Lorem ipsum dolor amet `helvetica banh mi yr taiyaki` readymade selvage. _HS lumbersexual 3 wolf moon 8-bit shaman tofu. Tofu echo park sustainable, adaptogen ramps retro scenester woke hoodie jean shorts fam._ Chicharrones edison bulb lomo, yr forage post-ironic tbh before they sold out vinyl meh meggings hashtag ramps. Everyday carry fingerstache single-origin coffee aesthetic cliche meh neutra taiyaki butcher flannel portland intelligentsia ugh. Chia **fanny pack** brooklyn DIY gastropub put a bird on it bushwick vice flexitarian.
+
+<Counter />
+
+<div className="code">
+
+  ```javascript
+
+    import React from 'react'
+    import styles from '../sass/index.sass'
+
+    const myFunction = ({ data }) => {
+      const { thingOne, thingTwo, thingThree } = data
+      console.log("1) ", thingOne)
+      console.log("2) ", thingTwo)
+      console.log("3) ", thingThree)
+      return(
+        <main className={styles.card}>
+          <h1>{thingOne}</h1>
+          <h2>{thingTwo}</h2>
+          <p>{thingThree}<p>
+        </main>
+      )
+    }
+    
+  ```
+  
+</div>
+
+<div className="post-image">
+
+![](./images/image03.jpg)
+
+</div>

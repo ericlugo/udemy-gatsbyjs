@@ -1,0 +1,45 @@
+@import 'variables'
+@import 'partials'
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap")
+
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Quicksand", sans-serif
+  background: $mainGrey
+  color: $mainBlack
+
+.code
+  background-color: $mainBlack
+  color: $mainGrey
+  padding: 1rem
+  margin: 1rem
+  border-left: 2px solid dodgerblue
+
+.counter
+  @extend %box
+
+  p
+    text-transform: uppercase
+    text-align: left
+
+  button
+    @extend %box
+    padding: 1rem 3rem
+    transition: all .3s ease-in-out
+    font-size: 2rem
+    font-weight: 5
+
+    &:hover
+      cursor: pointer
+      background-color: $mainWhite
+
+.post-image span
+  display: block
+  max-width: 100% !important
+  margin: 2rem
