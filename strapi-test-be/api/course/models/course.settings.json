@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "length": {
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Url": {
+      "type": "string"
+    },
+    "published": {
+      "type": "datetime"
+    }
+  },
+  "connection": "default",
+  "collectionName": "courses"
+}
